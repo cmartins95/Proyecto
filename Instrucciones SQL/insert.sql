@@ -1,58 +1,59 @@
 -- FOTO --
 DELETE FROM FOTO;
 
-INSERT INTO FOTO (titol, url) VALUES ('Arizona','https://www.visittheusa.mx/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2017-09/95e10af70d1ca605e3b0627f8176dec6.jpeg?itok=mWiwM89w');
-INSERT INTO FOTO (titol, url) VALUES ('Arizona Km 101','https://www.visittheusa.co/sites/default/files/styles/hero_m_1300x700/public/2018-06/eb10e51b96b91f09cfdf7e804f7b1b10.jpeg?itok=LNRpVPtm');
-INSERT INTO FOTO (titol, url) VALUES ('Arizona Km 192','https://www.destinosexperienciales.com/wp-content/uploads/2013/05/Ruta-66-Arizona.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Arizona Km 198','https://fotografias.lasexta.com/clipping/cmsimages02/2017/01/22/E40D121E-FDA0-4F6D-901C-A40A2B772762/58.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Arizona Km 204','https://i.ytimg.com/vi/tbPPwHZcHGM/maxresdefault.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Arizona Km 250','https://www.usnews.com/dims4/USNEWS/748e6be/2147483647/thumbnail/1000x468/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F6d%2Ff7%2F217f001f40069b5b73512047526a%2F170207-editorial.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (1,'Arizona','https://www.visittheusa.mx/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2017-09/95e10af70d1ca605e3b0627f8176dec6.jpeg?itok=mWiwM89w');
+INSERT INTO FOTO (id,titol,url) VALUES (2,'Arizona Km 101','https://www.visittheusa.co/sites/default/files/styles/hero_m_1300x700/public/2018-06/eb10e51b96b91f09cfdf7e804f7b1b10.jpeg?itok=LNRpVPtm');
+INSERT INTO FOTO (id,titol,url) VALUES (3,'Arizona Km 192','https://www.destinosexperienciales.com/wp-content/uploads/2013/05/Ruta-66-Arizona.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (4,'Arizona Km 198','https://fotografias.lasexta.com/clipping/cmsimages02/2017/01/22/E40D121E-FDA0-4F6D-901C-A40A2B772762/58.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (5,'Arizona Km 204','https://i.ytimg.com/vi/tbPPwHZcHGM/maxresdefault.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (6,'Arizona Km 250','https://www.usnews.com/dims4/USNEWS/748e6be/2147483647/thumbnail/1000x468/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F6d%2Ff7%2F217f001f40069b5b73512047526a%2F170207-editorial.jpg');
+									 
+INSERT INTO FOTO (id,titol,url) VALUES (7,'Alcubilla de Avellaneda','https://www.ayuntamiento.org/fotos/ayuntamiento-alcubilla-de-avellaneda-21661287.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (8,'Palacio del conde de Avellaneda en Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_palacio_de_Avellaneda_bbd91aee.jpg?itok=lGo8HVgu');
+INSERT INTO FOTO (id,titol,url) VALUES (9,'Ermita de Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_ermita_32dd6687.jpg?itok=ow75jHVH');
+INSERT INTO FOTO (id,titol,url) VALUES (10,'Iglesia de Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_iglesia_8b5ce794.jpg?itok=wTICbIHG');
+INSERT INTO FOTO (id,titol,url) VALUES (11,'Puente en Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_puente_aed5761b.jpg?itok=RacSyDXw');
+								 
+INSERT INTO FOTO (id,titol,url) VALUES (12,'Costa Brava','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/04/11/Recortada/img_mbigas_20190411-131024_imagenes_lv_terceros_cala_aiguablava_begur_vicky_pirata_arxiu_imatges_ptcbg_g-kytB-U4615865342730oD-992x558@LaVanguardia-Web.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (13,'Cala Sa Boadella en Lloret de Mar','https://www.viajeroscallejeros.com/wp-content/uploads/2017/09/sa-boadella.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (14,'Cala Pola en Tossa de Mar','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-pola.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (15,'Playa Illa Roja en Begur','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-illa-roja.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (16,'Cala Jugadora en el Cap de Creus','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-jugadora-cadaques.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (17,'Playa Es Castell en Palamós','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-es-castell-palamos.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (18,'Cala Aigua Xelida en Tamariu','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-aigua-xelida.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (19,'Santa Cristina','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-santa-cristina-1.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (20,'Sa Tuna en Begur','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-sa-tuna-begur.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (21,'Port-Bo en Calella de Palafrugell','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/port-po-calella-palafrugell.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (22,'Playa Sa Conca en Platja d’Aro','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-sa-conca.jpg');
+								 
+INSERT INTO FOTO (id,titol,url) VALUES (23,'Ruta 40','https://buenavibra.es/wp-content/uploads/2016/06/Ruta-40-portada.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (24,'Ruta 40 Km 285','https://viajeselmensajero.com/wp-content/uploads/2018/10/arg6-andes-altos.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (25,'Ruta 40 Km 290','https://lh3.googleusercontent.com/proxy/wFKXuN-UFZtS7_zYC4zrfRoY-3GrghVpHZ0Im_BLMN8km1mJ7T9w_O1ptNAFUXKQjnSkd_9Nd2B-OXdomGnzoFfpwK7Cg1yzxB0TmSUw3_qJh8MwJtlpRGz26cXosg');
+INSERT INTO FOTO (id,titol,url) VALUES (26,'Ruta 40 Km 322','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYeDN9A1bq7slCe2C82luD9cmyWf7UfCwffXIkf794sdHOFkth&usqp=CAU');
+INSERT INTO FOTO (id,titol,url) VALUES (27,'Ruta 40 Km 410','https://i0.wp.com/kilometros.com.ar/wp-content/uploads/2015/07/RUTA-40.jpg?resize=860%2C450&ssl=1');
+INSERT INTO FOTO (id,titol,url) VALUES (28,'Ruta 40 Km 421','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxl3b5hyTb048Sf1zjh8NHADb_XU07sF0TPCnlRgyP0ce66MzB&usqp=CAU');
 
-INSERT INTO FOTO (titol, url) VALUES ('Alcubilla de Avellaneda','https://www.ayuntamiento.org/fotos/ayuntamiento-alcubilla-de-avellaneda-21661287.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Palacio del conde de Avellaneda en Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_palacio_de_Avellaneda_bbd91aee.jpg?itok=lGo8HVgu');
-INSERT INTO FOTO (titol, url) VALUES ('Ermita de Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_ermita_32dd6687.jpg?itok=ow75jHVH');
-INSERT INTO FOTO (titol, url) VALUES ('Iglesia de Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_iglesia_8b5ce794.jpg?itok=wTICbIHG');
-INSERT INTO FOTO (titol, url) VALUES ('Puente en Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_puente_aed5761b.jpg?itok=RacSyDXw');
-
-INSERT INTO FOTO (titol, url) VALUES ('Costa Brava','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/04/11/Recortada/img_mbigas_20190411-131024_imagenes_lv_terceros_cala_aiguablava_begur_vicky_pirata_arxiu_imatges_ptcbg_g-kytB-U4615865342730oD-992x558@LaVanguardia-Web.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Cala Sa Boadella en Lloret de Mar','https://www.viajeroscallejeros.com/wp-content/uploads/2017/09/sa-boadella.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Cala Pola en Tossa de Mar','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-pola.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Playa Illa Roja en Begur','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-illa-roja.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Cala Jugadora en el Cap de Creus','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-jugadora-cadaques.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Playa Es Castell en Palamós','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-es-castell-palamos.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Cala Aigua Xelida en Tamariu','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-aigua-xelida.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Santa Cristina','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-santa-cristina-1.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Sa Tuna en Begur','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-sa-tuna-begur.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Port-Bo en Calella de Palafrugell','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/port-po-calella-palafrugell.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Playa Sa Conca en Platja d’Aro','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-sa-conca.jpg');
-
-INSERT INTO FOTO (titol, url) VALUES ('Ruta 40','https://buenavibra.es/wp-content/uploads/2016/06/Ruta-40-portada.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Ruta 40 Km 285','https://viajeselmensajero.com/wp-content/uploads/2018/10/arg6-andes-altos.jpg');
-INSERT INTO FOTO (titol, url) VALUES ('Ruta 40 Km 290','https://lh3.googleusercontent.com/proxy/wFKXuN-UFZtS7_zYC4zrfRoY-3GrghVpHZ0Im_BLMN8km1mJ7T9w_O1ptNAFUXKQjnSkd_9Nd2B-OXdomGnzoFfpwK7Cg1yzxB0TmSUw3_qJh8MwJtlpRGz26cXosg');
-INSERT INTO FOTO (titol, url) VALUES ('Ruta 40 Km 322','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYeDN9A1bq7slCe2C82luD9cmyWf7UfCwffXIkf794sdHOFkth&usqp=CAU');
-INSERT INTO FOTO (titol, url) VALUES ('Ruta 40 Km 410','https://i0.wp.com/kilometros.com.ar/wp-content/uploads/2015/07/RUTA-40.jpg?resize=860%2C450&ssl=1');
-INSERT INTO FOTO (titol, url) VALUES ('Ruta 40 Km 421','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxl3b5hyTb048Sf1zjh8NHADb_XU07sF0TPCnlRgyP0ce66MzB&usqp=CAU');
-
-INSERT INTO FOTO (titol, url) VALUES('Himalaya','https://www.ambientum.com/wp-content/uploads/2020/04/himalaya-montana-696x464.jpg');
-INSERT INTO FOTO (titol, url) VALUES('Subida del Himalaya','https://www.cordobabn.com/media/cordobabn/images/2020/04/11/2020041118374544390.jpg');
-INSERT INTO FOTO (titol, url) VALUES('Tramo de picos','https://www.eltiempo.com/files/image_640_428/uploads/2019/02/04/5c588a92034be.jpeg');
-INSERT INTO FOTO (titol, url) VALUES('Ascenso','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/05/24/Recortada/AFP_1GU6HB_20190524092145498-krED-U462429185895L7G-992x558@LaVanguardia-Web.jpg');
-INSERT INTO FOTO (titol, url) VALUES('Cima','https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/media/articles/64079/whatsapp-20image-202020-04-09-20at-2013-26-34.jpeg?itok=cBIqxK3j');
+INSERT INTO FOTO (id,titol,url) VALUES (29,'Himalaya','https://www.ambientum.com/wp-content/uploads/2020/04/himalaya-montana-696x464.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (30,'Subida del Himalaya','https://www.cordobabn.com/media/cordobabn/images/2020/04/11/2020041118374544390.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (31,'Tramo de picos','https://www.eltiempo.com/files/image_640_428/uploads/2019/02/04/5c588a92034be.jpeg');
+INSERT INTO FOTO (id,titol,url) VALUES (32,'Ascenso','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/05/24/Recortada/AFP_1GU6HB_20190524092145498-krED-U462429185895L7G-992x558@LaVanguardia-Web.jpg');
+INSERT INTO FOTO (id,titol,url) VALUES (33,'Cima','https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/media/articles/64079/whatsapp-20image-202020-04-09-20at-2013-26-34.jpeg?itok=cBIqxK3j');
 
 -- CATEGORIA --
 DELETE FROM CATEGORIA;
 
-INSERT INTO CATEGORIA (nom) VALUES('Pueblo');
-INSERT INTO CATEGORIA (nom) VALUES('Carretera');
-INSERT INTO CATEGORIA (nom) VALUES('Costero');
-INSERT INTO CATEGORIA (nom) VALUES('Montaña');
-INSERT INTO CATEGORIA (nom) VALUES('Lago');
+INSERT INTO CATEGORIA (id,nom,cat_pare) VALUES (1,'Pueblo',null);
+INSERT INTO CATEGORIA (id,nom,cat_pare) VALUES (2,'Carretera',null);
+INSERT INTO CATEGORIA (id,nom,cat_pare) VALUES (3,'Costero',null);
+INSERT INTO CATEGORIA (id,nom,cat_pare) VALUES (4,'Montaña',null);
+INSERT INTO CATEGORIA (id,nom,cat_pare) VALUES (5,'Valle',4);
+INSERT INTO CATEGORIA (id,nom,cat_pare) VALUES (6,'Ladera',4);
 
 -- RUTA --
 DELETE FROM RUTA;
 
-INSERT INTO RUTA (titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto) 
-VALUES ('Arizona Ruta 66','# Arizona Ruta 66
+INSERT INTO RUTA (id,titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto) 
+VALUES (1,'Arizona Ruta 66','# Arizona Ruta 66
 **Ruta Estatal 61** , también conocido como **SR 61** , es una carretera en el norte de [Arizona](https://es.qwe.wiki/wiki/Arizona "Arizona") funcionamiento general de suroeste a noreste, desde su terminal sur en [EE.UU. Ruta 60](https://es.qwe.wiki/wiki/U.S._Route_60_(Arizona) "EE.UU. Ruta 60 (Arizona)") al este de [Show Low](https://es.qwe.wiki/wiki/Show_Low,_Arizona "Show Low, Arizona") a la [New Mexico](https://es.qwe.wiki/wiki/New_Mexico "Nuevo Mexico") frontera en [Zuni](https://es.qwe.wiki/wiki/Zuni,_New_Mexico "Zuni, Nuevo México") , donde se convierte en [New Mexico State Road 53](https://es.qwe.wiki/wiki/New_Mexico_State_Road_53 "New Mexico State Road 53") . Partes de este eje, en particular cerca de [St. Johns](https://es.qwe.wiki/wiki/St._Johns,_Apache_County,_Arizona "St. Johns, el condado de Apache, Arizona") , se superponen [EE.UU. Ruta 180](https://es.qwe.wiki/wiki/U.S._Route_180_(Arizona) "EE.UU. Ruta 180 (Arizona)") y [EE.UU. Ruta 191](https://es.qwe.wiki/wiki/U.S._Route_191_(Arizona) "EE.UU. Ruta 191 (Arizona)") .
 ## Descripción de la ruta
 El término meridional de la SR 61 se encuentra en una ensambladura con los EEUU 60 al este de Show Low. Desde aquí, los jefes de la carretera hacia el noreste hacia una intersección con  [180A SR](https://es.qwe.wiki/wiki/Arizona_State_Route_180A "Arizona State Route 180A")  . Después de esta intersección, SR 61 comienza a seguir un rumbo más este hasta un cruce con EE.UU. 180. SR 61 carreras simultáneamente con Estados Unidos 180 de esta intersección hacia el este para una intersección con EE.UU. 191 en  [St. Johns](https://es.qwe.wiki/wiki/St._Johns,_Apache_County,_Arizona "St. Johns, el condado de Apache, Arizona")  . Si bien los Estados Unidos 180 sigue los concurrentes al sur con los Estados Unidos 191, SR 61 se pone en marcha al mismo tiempo que 191 de los EEUU en el norte. Los dos dividida al norte de San Juan con 191 de los EEUU continúa hacia el norte y SR 61 cabezas hacia el noreste. SR 61 llega a su término norteño en el  [Nuevo México](https://es.qwe.wiki/wiki/New_Mexico "Nuevo Mexico")  frontera, mientras que la propia carretera continúa en Nuevo México como  [Nuevo México State Road 53](https://es.qwe.wiki/wiki/New_Mexico_State_Road_53 "New Mexico State Road 53")  .
@@ -69,8 +70,8 @@ Toda la ruta está en  [el condado de Apache](https://es.qwe.wiki/wiki/Apache_Co
 > **Nota:** Mas información en [https://es.qwe.wiki/wiki/Arizona_State_Route_61](https://es.qwe.wiki/wiki/Arizona_State_Route_61)',
 54,2720,2650,645,'0000-00-15 12:30:00',false,3,null,1);
 
-INSERT INTO RUTA (titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
-VALUES ('Alcubilla de Avellaneda','# Alcubilla de Avellaneda
+INSERT INTO RUTA (id,titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
+VALUES (2,'Alcubilla de Avellaneda','# Alcubilla de Avellaneda
 **Alcubilla de Avellaneda** es un [municipio](https://es.wikipedia.org/wiki/Municipio_(Espa%C3%B1a) "Municipio (España)") y localidad [española](https://es.wikipedia.org/wiki/Espa%C3%B1a "España") de la [provincia de Soria](https://es.wikipedia.org/wiki/Provincia_de_Soria "Provincia de Soria"), en la comunidad autónoma de [Castilla y León](https://es.wikipedia.org/wiki/Castilla_y_Le%C3%B3n "Castilla y León"). El término municipal también comprende las localidades de [Alcoba de la Torre](https://es.wikipedia.org/wiki/Alcoba_de_la_Torre "Alcoba de la Torre") y [Zayas de Báscones](https://es.wikipedia.org/wiki/Zayas_de_B%C3%A1scones "Zayas de Báscones").
 ## Toponomía
 El nombre de Alcubilla es un diminutivo de Alcoba, palabra árabe que tiene varios significados, siendo los más comunes el de _torre_ o el de _aljibe_ o lugar donde guardar las aguas. En el caso de Alcubilla de Avellaneda, se hace referencia al significado de _torre_, o más bien _torrecita_. Su nombre es tomado de la localidad contigua de Alcoba de la Torre, aunque es también posible que en la Edad Media existiese en Alcubilla una pequeña torre defensiva, por su condición de estar situada en tierra fronteriza entre los reinos cristiano y musulmán. Por su parte, el topónimo Avellaneda hace referencia a los señores de Avellaneda, que edificaron en el siglo XVI un palacio en esta población.
@@ -84,8 +85,8 @@ En 2018 la población ascendía a 108 habitantes, 57 hombres y 51 mujeres.
 > **Nota:** Mas información en [https://es.wikipedia.org/wiki/Alcubilla_de_Avellaneda](https://es.wikipedia.org/wiki/Alcubilla_de_Avellaneda)',
 42,923,901,11,'0000-00-00 6:15:00',true,1,null,7);
 
-INSERT INTO RUTA (titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
-VALUES ('Costa Brava','# Costa Brava
+INSERT INTO RUTA (id,titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
+VALUES (3,'Costa Brava','# Costa Brava
 La  **Costa Brava**  es el nombre asignado a la zona costera de España que comienza en  [Blanes](https://es.wikipedia.org/wiki/Blanes "Blanes")  y acaba en la  [frontera](https://es.wikipedia.org/wiki/Frontera "Frontera")  con  [Francia](https://es.wikipedia.org/wiki/Francia "Francia"), en  [Portbou](https://es.wikipedia.org/wiki/Portbou "Portbou"). Limita al norte con la  [Costa Vermella](https://es.wikipedia.org/wiki/Costa_Vermella "Costa Vermella")  y al sur con la  [Costa del Maresme](https://es.wikipedia.org/wiki/Costa_del_Maresme "Costa del Maresme").
 Esta franja litoral tiene una extensión de 214 km y está comprendida por las comarcas catalanas del  [Alto Ampurdán](https://es.wikipedia.org/wiki/Alto_Ampurd%C3%A1n "Alto Ampurdán"), el  [Bajo Ampurdán](https://es.wikipedia.org/wiki/Bajo_Ampurd%C3%A1n "Bajo Ampurdán")  y  [La Selva](https://es.wikipedia.org/wiki/Selva_(comarca) "Selva (comarca)"). Se sitúa en la  [Provincia de Gerona](https://es.wikipedia.org/wiki/Provincia_de_Gerona "Provincia de Gerona"), perteneciente a la  [Comunidad Autónoma](https://es.wikipedia.org/wiki/Comunidad_Aut%C3%B3noma "Comunidad Autónoma")  de  [Cataluña](https://es.wikipedia.org/wiki/Catalu%C3%B1a "Cataluña"), en  [España](https://es.wikipedia.org/wiki/Espa%C3%B1a "España").
 ## Historia
@@ -99,8 +100,8 @@ Las playas de la Costa Brava se caracterizan por la calidad de sus aguas. A much
 > **Nota:** Mas información en [https://es.wikipedia.org/wiki/Costa_Brava](https://es.wikipedia.org/wiki/Costa_Brava)',
 11,35,0,92,'0000-00-01 05:30:00',false,2,null,12);
 
-INSERT INTO RUTA (titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
-VALUES ('Ruta 40','# Ruta nacional 40 (Argentina)
+INSERT INTO RUTA (id,titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
+VALUES (4,'Ruta 40','# Ruta nacional 40 (Argentina)
 La  **Ruta Nacional n.º 40 «Libertador General Don José de San Martín»**[1](https://es.wikipedia.org/wiki/Ruta_nacional_40_(Argentina)#cite_note-1)​ es una carretera de  [Argentina](https://es.wikipedia.org/wiki/Argentina "Argentina")  cuyo recorrido se extiende desde el  [cabo Vírgenes](https://es.wikipedia.org/wiki/Cabo_V%C3%ADrgenes "Cabo Vírgenes"),  [Santa Cruz](https://es.wikipedia.org/wiki/Provincia_de_Santa_Cruz "Provincia de Santa Cruz")  hasta el límite con  [Bolivia](https://es.wikipedia.org/wiki/Bolivia "Bolivia")  en la ciudad de  [La Quiaca](https://es.wikipedia.org/wiki/La_Quiaca "La Quiaca"), en  [Jujuy](https://es.wikipedia.org/wiki/Provincia_de_Jujuy "Provincia de Jujuy").[2](https://es.wikipedia.org/wiki/Ruta_nacional_40_(Argentina)#cite_note-tr40-2)​
 Esta  [ruta turística](https://es.wikipedia.org/wiki/Ruta_tur%C3%ADstica "Ruta turística")  corre paralela a la  [cordillera de los Andes](https://es.wikipedia.org/wiki/Cordillera_de_los_Andes "Cordillera de los Andes"), incluyendo tramos cercanos o a través de varios parques nacionales. Es la más larga del país, atravesándolo de sur a norte, y recorre varias de las regiones turísticas y los atractivos más importantes de su territorio. La ruta recorre 5194 km:[3](https://es.wikipedia.org/wiki/Ruta_nacional_40_(Argentina)#cite_note-3)​ comienza en Santa Cruz, atraviesa 21 parques nacionales, 18 importantes ríos, conecta 27 pasos cordilleranos y trepa (en el  [km](https://es.wikipedia.org/wiki/Kil%C3%B3metro "Kilómetro")  4601) a casi 5000 [m s. n. m.](https://es.wikipedia.org/wiki/Metros_sobre_el_nivel_del_mar "Metros sobre el nivel del mar")  en el  [abra del Acay](https://es.wikipedia.org/wiki/Abra_del_Acay "Abra del Acay")  en Salta, convirtiéndola en la ruta más alta de América, y también la más alta del mundo fuera de los  [Himalayas](https://es.wikipedia.org/wiki/Himalaya "Himalaya").
 En el sentido en que lo es la  [Ruta 66](https://es.wikipedia.org/wiki/Ruta_66 "Ruta 66")  para los  [Estados Unidos](https://es.wikipedia.org/wiki/Estados_Unidos "Estados Unidos"), la ruta 40 se configura de algún modo como un emblema de  [Argentina](https://es.wikipedia.org/wiki/Argentina "Argentina"). Cruza once provincias:  [Santa Cruz](https://es.wikipedia.org/wiki/Provincia_de_Santa_Cruz "Provincia de Santa Cruz"),  [Chubut](https://es.wikipedia.org/wiki/Provincia_del_Chubut "Provincia del Chubut"),  [Río Negro](https://es.wikipedia.org/wiki/Provincia_de_R%C3%ADo_Negro "Provincia de Río Negro"),  [Neuquén](https://es.wikipedia.org/wiki/Provincia_del_Neuqu%C3%A9n "Provincia del Neuquén"),  [Mendoza](https://es.wikipedia.org/wiki/Provincia_de_Mendoza "Provincia de Mendoza"),  [San Juan](https://es.wikipedia.org/wiki/Provincia_de_San_Juan "Provincia de San Juan"),  [La Rioja](https://es.wikipedia.org/wiki/Provincia_de_La_Rioja_(Argentina) "Provincia de La Rioja (Argentina)"),  [Catamarca](https://es.wikipedia.org/wiki/Provincia_de_Catamarca "Provincia de Catamarca"),  [Tucumán](https://es.wikipedia.org/wiki/Provincia_de_Tucum%C3%A1n "Provincia de Tucumán"),  [Salta](https://es.wikipedia.org/wiki/Provincia_de_Salta "Provincia de Salta")  y  [Jujuy](https://es.wikipedia.org/wiki/Provincia_de_Jujuy "Provincia de Jujuy"). A través de ella se puede acceder a  [El Calafate](https://es.wikipedia.org/wiki/El_Calafate "El Calafate"), cerca del  [glaciar Perito Moreno](https://es.wikipedia.org/wiki/Glaciar_Perito_Moreno "Glaciar Perito Moreno"),  [Esquel](https://es.wikipedia.org/wiki/Esquel "Esquel"),  _[El Hoyo](https://es.wikipedia.org/wiki/El_Hoyo_(Argentina) "El Hoyo (Argentina)")_,  [Lago Puelo](https://es.wikipedia.org/wiki/Lago_Puelo "Lago Puelo"),  [El Bolsón](https://es.wikipedia.org/wiki/El_Bols%C3%B3n "El Bolsón"),  [Bariloche](https://es.wikipedia.org/wiki/Bariloche "Bariloche"),  [Villa La Angostura](https://es.wikipedia.org/wiki/Villa_La_Angostura "Villa La Angostura"),  [San Martín de los Andes](https://es.wikipedia.org/wiki/San_Mart%C3%ADn_de_los_Andes "San Martín de los Andes"),  [Junín de los Andes](https://es.wikipedia.org/wiki/Jun%C3%ADn_de_los_Andes "Junín de los Andes"),  [Chos Malal](https://es.wikipedia.org/wiki/Chos_Malal "Chos Malal"),  [Malargüe](https://es.wikipedia.org/wiki/Malarg%C3%BCe "Malargüe"), la Ruta del Vino en las provincias de Mendoza y San Juan, yacimientos de fósiles de dinosaurios en la Provincia de San Juan, aguas termales en  [Catamarca](https://es.wikipedia.org/wiki/Catamarca "Catamarca"), las  [Ruinas de Quilmes](https://es.wikipedia.org/wiki/Ruinas_de_Quilmes "Ruinas de Quilmes"), los  [Valles Calchaquíes](https://es.wikipedia.org/wiki/Valles_Calchaqu%C3%ADes "Valles Calchaquíes"), los viñedos más altos del mundo en  [Cafayate](https://es.wikipedia.org/wiki/Cafayate "Cafayate")  junto a la  [Ruta del vino de Salta](https://es.wikipedia.org/wiki/Ruta_del_vino_de_Salta "Ruta del vino de Salta"), el  [viaducto La Polvorilla](https://es.wikipedia.org/wiki/Viaducto_La_Polvorilla "Viaducto La Polvorilla")  que es cruzado por el famoso  [Tren a las Nubes](https://es.wikipedia.org/wiki/Tren_a_las_Nubes "Tren a las Nubes")  y la  [Puna](https://es.wikipedia.org/wiki/Puna_de_Atacama "Puna de Atacama").
@@ -126,8 +127,8 @@ A continuación se describen las zonas donde discurre esta ruta de sur a norte. 
 > **Nota:** Mas información en [https://es.wikipedia.org/wiki/Ruta_nacional_40_(Argentina)](https://es.wikipedia.org/wiki/Ruta_nacional_40_(Argentina))',
 49,5912,5112,5194,'0000-00-25 22:00:00',false,5,null,23);
 
-INSERT INTO RUTA (titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
-VALUES ('Ascenso al Himalaya','# Monte Everest
+INSERT INTO RUTA (id,titol,descMarkDown,desnivell,alcadaMax,alcadaMin,distanciaKm,tempsApox,circular,dificultat5,gpxFileURL,idFoto)
+VALUES (5,'Ascenso al Himalaya','# Monte Everest
 El **monte Everest** es la [montaña](https://es.wikipedia.org/wiki/Monta%C3%B1a "Montaña") más alta del planeta Tierra, con una altitud de 8848 metros (29 029 pies) sobre el nivel del mar.[1](https://es.wikipedia.org/wiki/Monte_Everest#cite_note-rgs-1)​ Está localizada en el [continente asiático](https://es.wikipedia.org/wiki/Asia "Asia"), en la cordillera del [Himalaya](https://es.wikipedia.org/wiki/Himalaya "Himalaya"), concretamente en la subcordillera de [Mahalangur Himal](https://es.wikipedia.org/wiki/Mahalangur_Himal "Mahalangur Himal"); marca la [frontera](https://es.wikipedia.org/wiki/Frontera "Frontera") entre [China](https://es.wikipedia.org/wiki/Rep%C3%BAblica_Popular_China "República Popular China") y [Nepal](https://es.wikipedia.org/wiki/Nepal "Nepal"), considerada como la frontera más alta del mundo.[_[cita requerida](https://es.wikipedia.org/wiki/Wikipedia:Verificabilidad "Wikipedia:Verificabilidad")_] El [macizo](https://es.wikipedia.org/wiki/Macizo "Macizo") incluye los picos vecinos [Lhotse](https://es.wikipedia.org/wiki/Lhotse "Lhotse"), 8516 m (27 940 pies); [Nuptse](https://es.wikipedia.org/wiki/Nuptse "Nuptse"), 7855 m (25 771 pies) y [Changtse](https://es.wikipedia.org/wiki/Changtse "Changtse"), 7580 m (24 870 pies).
 ## Nombre
 El Everest es conocido en  [Nepal](https://es.wikipedia.org/wiki/Nepal "Nepal")  como  **Sagarmāthā**  (‘La frente del cielo’), en el  [Tíbet](https://es.wikipedia.org/wiki/T%C3%ADbet "Tíbet")  como  **Chomolungma**  o  **Qomolangma**  (‘Madre del  [universo](https://es.wikipedia.org/wiki/Universo "Universo")’) y en  [China](https://es.wikipedia.org/wiki/China "China")  como  **Zhūmùlǎngmǎ Fēng**.[2](https://es.wikipedia.org/wiki/Monte_Everest#cite_note-2)​[3](https://es.wikipedia.org/wiki/Monte_Everest#cite_note-3)​
@@ -145,28 +146,66 @@ Los primeros esfuerzos documentados en alcanzar la cima del Everest fueron hecho
 87,8748,5124,723,'0000-00-29 04:45:00',false,5,null,29);
 
 -- PUNT --
-INSERT INTO PUNT (id_ruta,id_punt,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
-VALUES (1,1,'Arizona Km 101','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad','0000-00-00 00:00:00',1,1,1,1);
-INSERT INTO PUNT (id_ruta,id_punt,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
-VALUES (1,2,'Arizona Km 192','Vistas excepcionales. Vale la pena parar en algunos lugares','0000-00-00 06:30:00',1,1,1,1);
-INSERT INTO PUNT (id_ruta,id_punt,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
-VALUES (1,3,'Arizona Km 198','Pequeños hostales por si se necesita reposar','0000-00-00 00:45:00',1,1,1,1);
-INSERT INTO PUNT (id_ruta,id_punt,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
-VALUES (1,4,'Arizona Km 204','América profunda en estado puro','0000-00-00 00:45:00',1,1,1,1);
-INSERT INTO PUNT (id_ruta,id_punt,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
-VALUES (1,5,'Arizona Km 250','Final de ruta, con una serie de bares y restaurantes muy famosos en esta ruta','0000-00-00 03:15:00',1,1,1,1);
+DELETE FROM PUNT;
 
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (1,1,1,'Arizona Km 101','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad',null,null,null,null,2);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (1,2,2,'Arizona Km 192','Vistas excepcionales. Vale la pena parar en algunos lugares',null,null,null,null,3);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (1,3,3,'Arizona Km 198','Pequeños hostales por si se necesita reposar',null,null,null,null,4);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (1,4,4,'Arizona Km 204','América profunda en estado puro',null,null,null,null,5);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (1,5,5,'Arizona Km 250','Final de ruta, con una serie de bares y restaurantes muy famosos en esta ruta',null,null,null,null,6);
 
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (2,1,1,'Palacio del conde de Avellaneda en Alcubilla de Avellaneda','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad',null,null,null,null,8);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (2,2,2,'Ermita de Alcubilla de Avellaneda','Vistas excepcionales. Vale la pena parar en algunos lugares',null,null,null,null,9);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (2,3,3,'Iglesia de Alcubilla de Avellaneda','Pequeños hostales por si se necesita reposar',null,null,null,null,10);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (2,4,4,'Puente en Alcubilla de Avellaneda','América profunda en estado puro',null,null,null,null,11);
 
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,1,1,'Cala Sa Boadella en Lloret de Mar','Cala Sa Boadella combina el encanto y las aguas cristalinas de las pequeñas calas de la Costa Brava y los espacio de las playas más amplias',null,null,null,null,13);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,2,2,'Cala Pola en Tossa de Mar','Una estupenda y animada cala situada a unos 6 km. del centro de Tossa, en la que se encuentra el Camping Pola rodeado de pinares, bosques de alcornoques y vegetación',null,null,null,null,14);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,3,3,'Playa Illa Roja en Begur','Dato importante a tener en cuenta es que es una playa nudista pero perfectamente puede ir gente vestida',null,null,null,null,15);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,4,4,'Cala Jugadora en el Cap de Creus','Cala Jugadora I y Jugadora II, son dos ejemplos de playas donde la tranquilidad y entorno natural te maravillarán, las dos calas están muy próximas, situadas al pie de un sendero',null,null,null,null,16);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,5,5,'Playa Es Castell en Palamós','La playa del Castell se encuentra a pocos metros del poblado ibérico de Castell y, por supuesto, está integrada dentro del espacio de interés natural de Castell-Cap Roig',null,null,null,null,17);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,6,6,'Cala Aigua Xelida en Tamariu','Un rincón de los más bellos de la Costa Brava, una cala pequeña, estrecha pero magnifica. Agua cristalina, formas caprichosas y naturaleza en estado puro. Magia',null,null,null,null,18);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,7,7,'Santa Cristina','Una playa muy bonita de Agus cristalinas donde relajarse tiene muchos rincones ocultos que puedes descubrir nos gusta mucho este lugar',null,null,null,null,19);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,8,8,'Sa Tuna en Begur','Pequeña cala que conserva sus antiguas casas de pescadores, cuenta con una pequeña caleta en el lado derecho a la que se puede acceder',null,null,null,null,20);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,9,9,'Port-Bo en Calella de Palafrugell','Las playas de Port Bo, en Calau y Malaespina forman un todo situado frente al núcleo urbano de Calella de Palafrugell y de sus arcos característicos ubicados frente al mar',null,null,null,null,21);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES (3,10,10,'Playa Sa Conca en Platja d’Aro','Una playa rodeada de pinos y rocas que llegan hasta el agua cristalina... qué mas puedes pedir en la Costa Brava? Un par de chiringuitos de comida correcta y servicio de salvamento',null,null,null,null,22);
 
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(4,1,1,'Ruta 40 Km 285','Kilometro 285 de la Ruta 40 de Argentina',null,null,null,null,24);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(4,2,2,'Ruta 40 Km 290','Kilometro 290 de la Ruta 40 de Argentina',null,null,null,null,25);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(4,3,3,'Ruta 40 Km 322','Kilometro 322 de la Ruta 40 de Argentina',null,null,null,null,26);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(4,4,4,'Ruta 40 Km 410','Kilometro 410 de la Ruta 40 de Argentina',null,null,null,null,27);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(4,5,5,'Ruta 40 Km 421','Kilometro 421 de la Ruta 40 de Argentina',null,null,null,null,28);
 
-
-
-
-
-
-
-
-
-
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(5,1,1,'Subida del Himalaya','Empezando desde el pequeño pueblo de Bara Bangal, se inicia la costosa subida',null,null,null,null,30);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(5,2,2,'Tramo de picos','El tramos de picos es el mas complicado, pues está repleto de picos',null,null,null,null,31);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(5,3,3,'Ascenso','La parte mas dura sin duda es la del ascenso. No todos estan prepadaos para ello. Con la ayuda de los sherpas el viaje se vuelve mas ameno',null,null,null,null,32);
+INSERT INTO PUNT (id_ruta,id_punt,numero,nom,descripcio,hora,latitud,longitud,elevacio,idFoto) 
+VALUES(5,4,4,'Cima','La maravillosa cima del Everest. Sin duda la mejor recompensa del tramo',null,null,null,null,33);
 
