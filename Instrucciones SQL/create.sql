@@ -1,42 +1,41 @@
 CREATE TABLE IF NOT EXISTS FOTO(
-	id				int PRIMARY KEY,
-	titol			varchar(255) NOT NULL,
-	url				varchar(255) NOT NULL
+	fot_id				int PRIMARY KEY,
+	fot_titol			varchar(255) NOT NULL,
+	fot_url				text NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS CATEGORIA(
-	id				int PRIMARY KEY,
-	nom				varchar(255) NOT NULL,
-	cat_pare		int REFERENCES CATEGORIA(id)
+	cat_id				int PRIMARY KEY,
+	cat_nom				varchar(255) NOT NULL,
+	cat_pare			int REFERENCES CATEGORIA(cat_id)
 );
 
 CREATE TABLE IF NOT EXISTS RUTA(
-	id				int PRIMARY KEY,
-	titol			varchar(255) NOT NULL,
-	descMarkDown	text NOT NULL,
-	desnivell		int NOT NULL,
-	alcadaMax		int NOT NULL,
-	alcadaMin		int NOT NULL,
-	distanciaKm		float NOT NULL,
-	tempsApox		datetime NOT NULL,
-	circular		boolean NOT NULL,
-	dificultat5		int NOT NULL,
-	gpxFileURL		varchar(255),
-	idFoto			int NOT NULL REFERENCES FOTO (id)
+	rut_id				int PRIMARY KEY,
+	rut_titol			varchar(255) NOT NULL,
+	rut_desc_markdown	text NOT NULL,
+	rut_desnivell		int NOT NULL,
+	rut_alcada_max		int NOT NULL,
+	rut_alcada_min		int NOT NULL,
+	rut_distancia_km	float NOT NULL,
+	rut_temps_aprox		datetime NOT NULL,
+	rut_circular		boolean NOT NULL,
+	rut_dificultat_5	int NOT NULL,
+	rut_gpx_File_URL	text,
+	rut_foto			int NOT NULL REFERENCES FOTO (fot_id)
 );
 
 CREATE TABLE IF NOT EXISTS PUNT(
-	id_ruta			int REFERENCES RUTA(id),
-	id_punt			int,
-	numero			int NOT NULL,
-	nom				varchar(255) NOT NULL,
-	descripcio		varchar(255) NOT NULL,
-	hora			datetime,
-	latitud			double,
-	longitud		double,
-	elevacio		int,
-	idFoto			int NOT NULL REFERENCES FOTO (id),
-	PRIMARY KEY (id_ruta, id_punt)
+	pun_id				int REFERENCES RUTA(id),
+	pun_numero			int,
+	pun_nom				varchar(255) NOT NULL,
+	pun_descripcio		varchar(255) NOT NULL,
+	pun_hora			datetime,
+	pun_latitud			double,
+	pun_longitud		double,
+	pun_elevacio		int,
+	pun_foto			int NOT NULL REFERENCES FOTO (id),
+	PRIMARY KEY (pun_id, pun_numero)
 );
 
 /*
