@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS CATEGORIA(
 CREATE TABLE IF NOT EXISTS RUTA(
 	rut_id				int PRIMARY KEY,
 	rut_titol			varchar(255) NOT NULL,
+	rut_cat_id			int NOT NULL REFERENCES CATEGORIA (cat_id),
 	rut_desc_markdown	text NOT NULL,
 	rut_desnivell		int NOT NULL,
 	rut_alcada_max		int NOT NULL,
@@ -22,7 +23,7 @@ CREATE TABLE IF NOT EXISTS RUTA(
 	rut_circular		boolean NOT NULL,
 	rut_dificultat_5	int NOT NULL,
 	rut_gpx_File_URL	text,
-	rut_foto			int NOT NULL REFERENCES FOTO (fot_id)
+	rut_foto			int NOT NULL UNIQUE REFERENCES FOTO (fot_id)
 );
 
 CREATE TABLE IF NOT EXISTS PUNT(
@@ -34,7 +35,7 @@ CREATE TABLE IF NOT EXISTS PUNT(
 	pun_latitud			double,
 	pun_longitud		double,
 	pun_elevacio		int,
-	pun_foto			int NOT NULL REFERENCES FOTO (id),
+	pun_foto			int NOT NULL UNIQUE REFERENCES FOTO (id),
 	PRIMARY KEY (pun_id, pun_numero)
 );
 
