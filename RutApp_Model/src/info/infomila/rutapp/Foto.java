@@ -3,7 +3,7 @@ package info.infomila.rutapp;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class Foto {
+public class Foto implements Serializable{
     
     private Integer fot_id;
     private String fot_titol;
@@ -11,6 +11,12 @@ public class Foto {
     
     protected Foto(){
         
+    }
+
+    public Foto(Integer fot_id, String fot_titol, String fot_url) {
+        this.fot_id = fot_id;
+        this.fot_titol = fot_titol;
+        this.fot_url = fot_url;
     }
 
     public Integer getFot_id() {

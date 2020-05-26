@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yellow"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="157.5dp"
+        android:orientation="vertical"
+        android:background="">
+
+        <ImageView
+            android:id="@+id/ivwImatgeRuta"
+            android:layout_marginRight="7.5dp"
+            android:layout_width="150dp"
+            android:layout_height="157.5dp"
+            android:src="@drawable/desierto"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="157.5dp">
+
+        <TextView
+            android:id="@+id/tvwNomRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:text="Nom:"
+            android:layout_marginBottom="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tvwDesnivellRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Desnivell:"
+            android:layout_marginBottom="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tvwAlcMinRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Alçada minima:"
+            android:layout_marginBottom="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tvwAlcMaxRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Alçada màxima:"
+            android:layout_marginBottom="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tvwDistanciaRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Distancia:"
+            android:layout_marginBottom="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tvwTempsRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Temps apox:"
+            android:layout_marginBottom="2.5dp"/>
+
+        <TextView
+            android:id="@+id/tvwCircularRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Circular:"/>
+
+    </LinearLayout>
+
+</LinearLayout>

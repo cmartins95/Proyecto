@@ -5,12 +5,41 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import javax.persistence.Basic;
+import javax.persistence.CascadeType;
+import javax.persistence.CollectionTable;
+import javax.persistence.Column;
+import javax.persistence.ElementCollection;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.ForeignKey;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Transient;
+import javax.persistence.UniqueConstraint;
 
-public class Categoria {
-    
+@Entity
+@Table(name="categoria")
+public class Categoria implements Serializable{
+
+    @Id
     private Integer cat_id;
+    
+    @Basic(optional = false)
+    @Column(length=255,nullable = false)
     private String cat_nom;
-    private List<Categoria> cat_fills;
+    
+    @ManyToOne(optional = true, cascade=CascadeType.PERSIST, fetch=FetchType.LAZY)
+    @JoinColumn(name = "cat_pare", nullable = true, foreignKey = @ForeignKey(name = "CATEGORIA_CATEGORIA_FK"))
+    private Categoria cat_pare;
+    
+    @OneToMany(mappedBy = "cat_pare")
+    private List<Categoria> cat_filles;
+    
+    @OneToMany(mappedBy = "rut_cat_id")
     private List<Ruta> cat_rutes;
     
     protected Categoria(){
@@ -18,56 +47,76 @@ public class Categoria {
     }
     
     public Categoria(Integer cat_id, String cat_nom) {
-        setCat_id(cat_id);
-        setCat_nom(cat_nom);
-        cat_fills = new ArrayList();
+        setId(cat_id);
+        setNom(cat_nom);
         cat_rutes = new ArrayList<Ruta>();
+        cat_filles = new ArrayList<Categoria>();
     }
 
-    public Integer getCat_id() {
+    public Categoria(Integer cat_id, String cat_nom, Categoria cat_pare) {
+        setId(cat_id);
+        setNom(cat_nom);
+        setPare(cat_pare);
+        cat_rutes = new ArrayList<Ruta>();
+        cat_filles = new ArrayList<Categoria>();
+    }
+    
+    public Integer getId() {
         return cat_id;
     }
 
-    public void setCat_id(Integer cat_id) {
+    public void setId(Integer cat_id) {
         if(cat_id==null){
             throw new RutAppException("CAT_ID CAN NOT BE NULL");
         }
         this.cat_id = cat_id;
     }
 
-    public String getCat_nom() {
+    public String getNom() {
         return cat_nom;
     }
 
-    public void setCat_nom(String cat_nom) {
+    public void setNom(String cat_nom) {
         if(cat_nom==null){
             throw new RutAppException("CAT_NOM CAN NOT BE NULL");
         }
         this.cat_nom = cat_nom;
     }
 
-    public int getCatFillesCount(){
-        return cat_fills.size();
+    public Categoria getPare() {
+        return cat_pare;
+    }
+
+    public void setPare(Categoria cat_pare) {
+        this.cat_pare = cat_pare;
+    }
+
+    public int getFillesCount(){
+        return cat_filles.size();
     }
     
-    public Categoria getCatFilla(int index){
-        return cat_fills.get(index);
+    public Categoria getFilla(int index){
+        return cat_filles.get(index);
     }
     
-    public Iterator<Categoria> getCatFilles(){
-        return cat_fills.iterator();
+    public List<Categoria> getListFilles(){
+        return cat_filles;
     }
     
-    public void addCatFilla(Categoria filla){
-        cat_fills.add(filla);
+    public Iterator<Categoria> getFilles(){
+        return cat_filles.iterator();
     }
     
-    public Categoria deleteCatFilla(int index){
-        return cat_fills.remove(index);
+    public void addFilla(Categoria filla){
+        cat_filles.add(filla);
     }
     
-    public void deleteCatFilla(Categoria filla){
-        cat_fills.remove(filla);
+    public Categoria deleteFilla(int index){
+        return cat_filles.remove(index);
+    }
+    
+    public void deleteFilla(Categoria filla){
+        cat_filles.remove(filla);
     }
     
     public int getRutesCount(){
@@ -117,6 +166,11 @@ public class Categoria {
             return false;
         }
         return true;
+    }
+    
+    @Override
+    public String toString() {
+        return cat_nom;
     }
     
 }
