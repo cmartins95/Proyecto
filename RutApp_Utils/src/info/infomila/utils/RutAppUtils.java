@@ -15,6 +15,7 @@ public interface RutAppUtils {
     void eliminaCategoria(Categoria categoria);
     int getNewCategoriaId();
     
+    List<Ruta> getRutes();
     List<Ruta> getRutes(Categoria c);
     
     void transaction();

@@ -2,42 +2,42 @@
 -- DELETE FROM FOTO;
 
 INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (1,'Arizona','https://www.visittheusa.mx/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2017-09/95e10af70d1ca605e3b0627f8176dec6.jpeg?itok=mWiwM89w');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (2,'Arizona Km 101','https://www.visittheusa.co/sites/default/files/styles/hero_m_1300x700/public/2018-06/eb10e51b96b91f09cfdf7e804f7b1b10.jpeg?itok=LNRpVPtm');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (3,'Arizona Km 192','https://www.destinosexperienciales.com/wp-content/uploads/2013/05/Ruta-66-Arizona.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (4,'Arizona Km 198','https://fotografias.lasexta.com/clipping/cmsimages02/2017/01/22/E40D121E-FDA0-4F6D-901C-A40A2B772762/58.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (5,'Arizona Km 204','https://i.ytimg.com/vi/tbPPwHZcHGM/maxresdefault.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (6,'Arizona Km 250','https://www.usnews.com/dims4/USNEWS/748e6be/2147483647/thumbnail/1000x468/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F6d%2Ff7%2F217f001f40069b5b73512047526a%2F170207-editorial.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (2,'Arizona_Km101','https://www.visittheusa.co/sites/default/files/styles/hero_m_1300x700/public/2018-06/eb10e51b96b91f09cfdf7e804f7b1b10.jpeg?itok=LNRpVPtm');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (3,'Arizona_Km192','https://www.destinosexperienciales.com/wp-content/uploads/2013/05/Ruta-66-Arizona.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (4,'Arizona_Km198','https://fotografias.lasexta.com/clipping/cmsimages02/2017/01/22/E40D121E-FDA0-4F6D-901C-A40A2B772762/58.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (5,'Arizona_Km204','https://i.ytimg.com/vi/tbPPwHZcHGM/maxresdefault.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (6,'Arizona_Km250','https://www.usnews.com/dims4/USNEWS/748e6be/2147483647/thumbnail/1000x468/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F6d%2Ff7%2F217f001f40069b5b73512047526a%2F170207-editorial.jpg');
 									 
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (7,'Alcubilla de Avellaneda','https://www.ayuntamiento.org/fotos/ayuntamiento-alcubilla-de-avellaneda-21661287.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (8,'Palacio del conde de Avellaneda en Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_palacio_de_Avellaneda_bbd91aee.jpg?itok=lGo8HVgu');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (9,'Ermita de Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_ermita_32dd6687.jpg?itok=ow75jHVH');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (10,'Iglesia de Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_iglesia_8b5ce794.jpg?itok=wTICbIHG');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (11,'Puente en Alcubilla de Avellaneda','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_puente_aed5761b.jpg?itok=RacSyDXw');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (7,'Alcubilla','https://www.ayuntamiento.org/fotos/ayuntamiento-alcubilla-de-avellaneda-21661287.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (8,'Alcubilla_Palacio','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_palacio_de_Avellaneda_bbd91aee.jpg?itok=lGo8HVgu');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (9,'Alcubilla_Ermita','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_ermita_32dd6687.jpg?itok=ow75jHVH');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (10,'Alcubilla_Iglesia','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_iglesia_8b5ce794.jpg?itok=wTICbIHG');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (11,'Alcubilla_Puente','http://www.sorianitelaimaginas.com/sites/sorianitelaimaginas/files/public/styles/_x600/public/localidades/imagenes_Alcubilla_de_Avellaneda_puente_aed5761b.jpg?itok=RacSyDXw');
 								 
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (12,'Costa Brava','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/04/11/Recortada/img_mbigas_20190411-131024_imagenes_lv_terceros_cala_aiguablava_begur_vicky_pirata_arxiu_imatges_ptcbg_g-kytB-U4615865342730oD-992x558@LaVanguardia-Web.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (13,'Cala Sa Boadella en Lloret de Mar','https://www.viajeroscallejeros.com/wp-content/uploads/2017/09/sa-boadella.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (14,'Cala Pola en Tossa de Mar','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-pola.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (15,'Playa Illa Roja en Begur','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-illa-roja.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (16,'Cala Jugadora en el Cap de Creus','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-jugadora-cadaques.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (17,'Playa Es Castell en Palamós','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-es-castell-palamos.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (18,'Cala Aigua Xelida en Tamariu','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-aigua-xelida.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (19,'Santa Cristina','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-santa-cristina-1.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (20,'Sa Tuna en Begur','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-sa-tuna-begur.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (21,'Port-Bo en Calella de Palafrugell','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/port-po-calella-palafrugell.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (22,'Playa Sa Conca en Platja d’Aro','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-sa-conca.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (12,'Costa_Brava','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/04/11/Recortada/img_mbigas_20190411-131024_imagenes_lv_terceros_cala_aiguablava_begur_vicky_pirata_arxiu_imatges_ptcbg_g-kytB-U4615865342730oD-992x558@LaVanguardia-Web.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (13,'Costa_Brava_Sa_Boadella','https://www.viajeroscallejeros.com/wp-content/uploads/2017/09/sa-boadella.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (14,'Costa_Brava_Pola','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-pola.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (15,'Costa_Brava_Illa_Roja','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-illa-roja.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (16,'Costa_Brava_Jugadora_Cap_Creus','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-jugadora-cadaques.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (17,'Costa_Brava_Castell','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-es-castell-palamos.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (18,'Costa_Brava_Aigua_Xelida','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-aigua-xelida.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (19,'Costa_Brava_Santa_Cristina','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-santa-cristina-1.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (20,'Costa_Brava_Tuna','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/cala-sa-tuna-begur.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (21,'Costa_Brava_Port_Bo','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/port-po-calella-palafrugell.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (22,'Costa_Brava_Conca_Platja_Aro','https://www.viajeroscallejeros.com/wp-content/uploads/2017/10/playa-sa-conca.jpg');
 								 
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (23,'Ruta 40','https://buenavibra.es/wp-content/uploads/2016/06/Ruta-40-portada.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (24,'Ruta 40 Km 285','https://viajeselmensajero.com/wp-content/uploads/2018/10/arg6-andes-altos.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (25,'Ruta 40 Km 290','https://lh3.googleusercontent.com/proxy/wFKXuN-UFZtS7_zYC4zrfRoY-3GrghVpHZ0Im_BLMN8km1mJ7T9w_O1ptNAFUXKQjnSkd_9Nd2B-OXdomGnzoFfpwK7Cg1yzxB0TmSUw3_qJh8MwJtlpRGz26cXosg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (26,'Ruta 40 Km 322','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYeDN9A1bq7slCe2C82luD9cmyWf7UfCwffXIkf794sdHOFkth&usqp=CAU');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (27,'Ruta 40 Km 410','https://i0.wp.com/kilometros.com.ar/wp-content/uploads/2015/07/RUTA-40.jpg?resize=860%2C450&ssl=1');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (28,'Ruta 40 Km 421','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxl3b5hyTb048Sf1zjh8NHADb_XU07sF0TPCnlRgyP0ce66MzB&usqp=CAU');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (23,'Ruta_40','https://buenavibra.es/wp-content/uploads/2016/06/Ruta-40-portada.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (24,'Ruta_40_Km285','https://viajeselmensajero.com/wp-content/uploads/2018/10/arg6-andes-altos.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (25,'Ruta_40_Km290','https://travelwithvera.files.wordpress.com/2013/08/ruta_403.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (26,'Ruta_40_Km322','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYeDN9A1bq7slCe2C82luD9cmyWf7UfCwffXIkf794sdHOFkth&usqp=CAU');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (27,'Ruta_40_Km410','https://i0.wp.com/kilometros.com.ar/wp-content/uploads/2015/07/RUTA-40.jpg?resize=860%2C450&ssl=1');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (28,'Ruta_40_Km421','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQxl3b5hyTb048Sf1zjh8NHADb_XU07sF0TPCnlRgyP0ce66MzB&usqp=CAU');
 
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (29,'Himalaya','https://www.ambientum.com/wp-content/uploads/2020/04/himalaya-montana-696x464.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (30,'Subida del Himalaya','https://www.cordobabn.com/media/cordobabn/images/2020/04/11/2020041118374544390.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (31,'Tramo de picos','https://www.eltiempo.com/files/image_640_428/uploads/2019/02/04/5c588a92034be.jpeg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (32,'Ascenso','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/05/24/Recortada/AFP_1GU6HB_20190524092145498-krED-U462429185895L7G-992x558@LaVanguardia-Web.jpg');
-INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (33,'Cima','https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/media/articles/64079/whatsapp-20image-202020-04-09-20at-2013-26-34.jpeg?itok=cBIqxK3j');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (29,'Himalaya','https://www.lavanguardia.com/r/GODO/LV/p7/WebSite/2020/04/12/Recortada/img_azarzoso_20180928-123302_imagenes_lv_terceros_istock-543183018_4_7_794881174-kTpC-U48448150310fV-992x558@LaVanguardia-Web.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (30,'Himalaya_Subida','https://www.cordobabn.com/media/cordobabn/images/2020/04/11/2020041118374544390.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (31,'Himalaya_Tramo_Picos','https://www.eltiempo.com/files/image_640_428/uploads/2019/02/04/5c588a92034be.jpeg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (32,'Himalaya_Ascenso','https://www.lavanguardia.com/r/GODO/LV/p6/WebSite/2019/05/24/Recortada/AFP_1GU6HB_20190524092145498-krED-U462429185895L7G-992x558@LaVanguardia-Web.jpg');
+INSERT INTO FOTO (fot_id,fot_titol,fot_url) VALUES (33,'Himalaya_Cima','https://images.pagina12.com.ar/styles/focal_3_2_960x640/public/media/articles/64079/whatsapp-20image-202020-04-09-20at-2013-26-34.jpeg?itok=cBIqxK3j');
 
 -- CATEGORIA --
 -- DELETE FROM CATEGORIA;
@@ -57,18 +57,9 @@ VALUES (1,2,'Arizona Ruta 66','# Arizona Ruta 66
 **Ruta Estatal 61** , también conocido como **SR 61** , es una carretera en el norte de [Arizona](https://es.qwe.wiki/wiki/Arizona "Arizona") funcionamiento general de suroeste a noreste, desde su terminal sur en [EE.UU. Ruta 60](https://es.qwe.wiki/wiki/U.S._Route_60_(Arizona) "EE.UU. Ruta 60 (Arizona)") al este de [Show Low](https://es.qwe.wiki/wiki/Show_Low,_Arizona "Show Low, Arizona") a la [New Mexico](https://es.qwe.wiki/wiki/New_Mexico "Nuevo Mexico") frontera en [Zuni](https://es.qwe.wiki/wiki/Zuni,_New_Mexico "Zuni, Nuevo México") , donde se convierte en [New Mexico State Road 53](https://es.qwe.wiki/wiki/New_Mexico_State_Road_53 "New Mexico State Road 53") . Partes de este eje, en particular cerca de [St. Johns](https://es.qwe.wiki/wiki/St._Johns,_Apache_County,_Arizona "St. Johns, el condado de Apache, Arizona") , se superponen [EE.UU. Ruta 180](https://es.qwe.wiki/wiki/U.S._Route_180_(Arizona) "EE.UU. Ruta 180 (Arizona)") y [EE.UU. Ruta 191](https://es.qwe.wiki/wiki/U.S._Route_191_(Arizona) "EE.UU. Ruta 191 (Arizona)") .
 ## Descripción de la ruta
 El término meridional de la SR 61 se encuentra en una ensambladura con los EEUU 60 al este de Show Low. Desde aquí, los jefes de la carretera hacia el noreste hacia una intersección con  [180A SR](https://es.qwe.wiki/wiki/Arizona_State_Route_180A "Arizona State Route 180A")  . Después de esta intersección, SR 61 comienza a seguir un rumbo más este hasta un cruce con EE.UU. 180. SR 61 carreras simultáneamente con Estados Unidos 180 de esta intersección hacia el este para una intersección con EE.UU. 191 en  [St. Johns](https://es.qwe.wiki/wiki/St._Johns,_Apache_County,_Arizona "St. Johns, el condado de Apache, Arizona")  . Si bien los Estados Unidos 180 sigue los concurrentes al sur con los Estados Unidos 191, SR 61 se pone en marcha al mismo tiempo que 191 de los EEUU en el norte. Los dos dividida al norte de San Juan con 191 de los EEUU continúa hacia el norte y SR 61 cabezas hacia el noreste. SR 61 llega a su término norteño en el  [Nuevo México](https://es.qwe.wiki/wiki/New_Mexico "Nuevo Mexico")  frontera, mientras que la propia carretera continúa en Nuevo México como  [Nuevo México State Road 53](https://es.qwe.wiki/wiki/New_Mexico_State_Road_53 "New Mexico State Road 53")  .
-Toda la ruta está en  [el condado de Apache](https://es.qwe.wiki/wiki/Apache_County,_Arizona "El condado de Apache, Arizona")  .
-| Ubicación   	| mi    	| km     	| destinos                                                                    	| notas                                                                                                       	|
-|-------------	|-------	|--------	|-----------------------------------------------------------------------------	|-------------------------------------------------------------------------------------------------------------	|
-|             	| 0.00  	| 0.00   	| US 60 - StartFragmentSpringerville , Show Low EndFragment                   	| terminal sur                                                                                                	|
-| Concho      	| 19.13 	| 30.79  	| SR 180A oeste - bosque petrificado , Holbrook                               	|                                                                                                             	|
-|             	| 28.72 	| 46.22  	| Estados Unidos 180 West - bosque petrificado , Holbrook                     	| extremo sur de Estados Unidos 180 de concurrencia                                                           	|
-| De San Juan 	| 33.68 	| 54.20  	| EEUU 180 al este / 191 de los EEUU al sur (calle 2 Oriente) - Springerville 	| extremo norte de los Estados Unidos 180 de concurrencia; extremo sur de los Estados Unidos 191 concurrencia 	|
-|             	| 62.76 	| 101.00 	| EE.UU. 191 norte - Sanders , Gallup                                         	| extremo norte de los Estados Unidos 191 concurrencia                                                        	|
-|             	| 76.51 	| 123,13 	| NM 53 al este                                                               	| Continuación en Nuevo México                                                                                	|
-
+Toda la ruta está en  [el condado de Apache](https://es.qwe.wiki/wiki/Apache_County,_Arizona "El condado de Apache, Arizona").
 > **Nota:** Mas información en [https://es.qwe.wiki/wiki/Arizona_State_Route_61](https://es.qwe.wiki/wiki/Arizona_State_Route_61)',
-54,2720,2650,645,1.296e+9,false,3,null,1);
+54,2720,2650,645,20700000,false,3,null,1);
 
 INSERT INTO RUTA (rut_id,rut_cat_id,rut_titol,rut_desc_markdown,rut_desnivell,rut_alcada_max,rut_alcada_min,rut_distancia_km,rut_temps_aprox,rut_circular,rut_dificultat_5,rut_gpx_File_URL,rut_foto)
 VALUES (2,1,'Alcubilla de Avellaneda','# Alcubilla de Avellaneda
@@ -149,27 +140,27 @@ Los primeros esfuerzos documentados en alcanzar la cima del Everest fueron hecho
 -- DELETE FROM PUNT;
 
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (1,1,'Arizona Km 101','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad',null,null,null,null,2);
+VALUES (1,1,'Arizona Km 101','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad',1500000,32.8,91,63,2);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (1,2,'Arizona Km 192','Vistas excepcionales. Vale la pena parar en algunos lugares',null,null,null,null,3);
+VALUES (1,2,'Arizona Km 192','Vistas excepcionales. Vale la pena parar en algunos lugares',1500000,32.8,91,63,3);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (1,3,'Arizona Km 198','Pequeños hostales por si se necesita reposar',null,null,null,null,4);
+VALUES (1,3,'Arizona Km 198','Pequeños hostales por si se necesita reposar',2400000,30.2,6,67,4);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (1,4,'Arizona Km 204','América profunda en estado puro',null,null,null,null,5);
+VALUES (1,4,'Arizona Km 204','América profunda en estado puro',1500000,29.1,6,63,5);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (1,5,'Arizona Km 250','Final de ruta, con una serie de bares y restaurantes muy famosos en esta ruta',null,null,null,null,6);
+VALUES (1,5,'Arizona Km 250','Final de ruta, con una serie de bares y restaurantes muy famosos en esta ruta',2400000,29.9,46,62,6);
 
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (2,1,'Palacio del conde de Avellaneda en Alcubilla de Avellaneda','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad',null,null,null,null,8);
+VALUES (2,1,'Palacio del conde de Avellaneda en Alcubilla de Avellaneda','Buenos bares de carretera para iniciar la ruta bien entonado, clima cálido y poca humedad',null,20.1,null,4,8);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (2,2,'Ermita de Alcubilla de Avellaneda','Vistas excepcionales. Vale la pena parar en algunos lugares',null,null,null,null,9);
+VALUES (2,2,'Ermita de Alcubilla de Avellaneda','Vistas excepcionales. Vale la pena parar en algunos lugares',2700000,20.1,18,4,9);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (2,3,'Iglesia de Alcubilla de Avellaneda','Pequeños hostales por si se necesita reposar',null,null,null,null,10);
+VALUES (2,3,'Iglesia de Alcubilla de Avellaneda','Pequeños hostales por si se necesita reposar',3300000,20.1,15,5,10);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (2,4,'Puente en Alcubilla de Avellaneda','América profunda en estado puro',null,null,null,null,11);
+VALUES (2,4,'Puente en Alcubilla de Avellaneda','América profunda en estado puro',2700000,20.1,20,4,11);
 
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES (3,1,'Cala Sa Boadella en Lloret de Mar','Cala Sa Boadella combina el encanto y las aguas cristalinas de las pequeñas calas de la Costa Brava y los espacio de las playas más amplias',null,null,null,null,13);
+VALUES (3,1,'Cala Sa Boadella en Lloret de Mar','Cala Sa Boadella combina el encanto y las aguas cristalinas de las pequeñas calas de la Costa Brava y los espacio de las playas más amplias',null,null,null,15,13);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
 VALUES (3,2,'Cala Pola en Tossa de Mar','Una estupenda y animada cala situada a unos 6 km. del centro de Tossa, en la que se encuentra el Camping Pola rodeado de pinares, bosques de alcornoques y vegetación',null,null,null,null,14);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
@@ -190,22 +181,22 @@ INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,
 VALUES (3,10,'Playa Sa Conca en Platja d’Aro','Una playa rodeada de pinos y rocas que llegan hasta el agua cristalina... qué mas puedes pedir en la Costa Brava? Un par de chiringuitos de comida correcta y servicio de salvamento',null,null,null,null,22);
 
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(4,1,'Ruta 40 Km 285','Kilometro 285 de la Ruta 40 de Argentina',null,null,null,null,24);
+VALUES(4,1,'Ruta 40 Km 285','Kilometro 285 de la Ruta 40 de Argentina',2400700,14.7,null,72,24);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(4,2,'Ruta 40 Km 290','Kilometro 290 de la Ruta 40 de Argentina',null,null,null,null,25);
+VALUES(4,2,'Ruta 40 Km 290','Kilometro 290 de la Ruta 40 de Argentina',2960000,14.7,5,74,25);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(4,3,'Ruta 40 Km 322','Kilometro 322 de la Ruta 40 de Argentina',null,null,null,null,26);
+VALUES(4,3,'Ruta 40 Km 322','Kilometro 322 de la Ruta 40 de Argentina',3520000,14.7,32,72,26);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(4,4,'Ruta 40 Km 410','Kilometro 410 de la Ruta 40 de Argentina',null,null,null,null,27);
+VALUES(4,4,'Ruta 40 Km 410','Kilometro 410 de la Ruta 40 de Argentina',3250000,14.7,98,73,27);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(4,5,'Ruta 40 Km 421','Kilometro 421 de la Ruta 40 de Argentina',null,null,null,null,28);
+VALUES(4,5,'Ruta 40 Km 421','Kilometro 421 de la Ruta 40 de Argentina',3150000,14.7,11,77,28);
 
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(5,1,'Subida del Himalaya','Empezando desde el pequeño pueblo de Bara Bangal, se inicia la costosa subida',null,null,null,null,30);
+VALUES(5,1,'Subida del Himalaya','Empezando desde el pequeño pueblo de Bara Bangal, se inicia la costosa subida',1036800000,null,null,400,30);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(5,2,'Tramo de picos','El tramos de picos es el mas complicado, pues está repleto de picos',null,null,null,null,31);
+VALUES(5,2,'Tramo de picos','El tramos de picos es el mas complicado, pues está repleto de picos',259200000,null,null,2120,31);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(5,3,'Ascenso','La parte mas dura sin duda es la del ascenso. No todos estan prepadaos para ello. Con la ayuda de los sherpas el viaje se vuelve mas ameno',null,null,null,null,32);
+VALUES(5,3,'Ascenso','La parte mas dura sin duda es la del ascenso. No todos estan prepadaos para ello. Con la ayuda de los sherpas el viaje se vuelve mas ameno',432000000,null,null,3500,32);
 INSERT INTO PUNT (pun_id,pun_numero,pun_nom,pun_descripcio,pun_hora,pun_latitud,pun_longitud,pun_elevacio,pun_foto) 
-VALUES(5,4,'Cima','La maravillosa cima del Everest. Sin duda la mejor recompensa del tramo',null,null,null,null,33);
+VALUES(5,4,'Cima','La maravillosa cima del Everest. Sin duda la mejor recompensa del tramo',432000000,null,null,4100,33);
 

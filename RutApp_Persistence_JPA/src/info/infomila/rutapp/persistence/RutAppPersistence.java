@@ -113,5 +113,10 @@ public class RutAppPersistence implements RutAppUtils{
     public void commit() {
         em.getTransaction().commit();
     }
+
+    @Override
+    public List<Ruta> getRutes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

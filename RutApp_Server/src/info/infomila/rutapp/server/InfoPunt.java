@@ -1,6 +1,8 @@
 package info.infomila.rutapp.server;
 
-public class PuntPaquetInfo {
+import java.util.concurrent.TimeUnit;
+
+public class InfoPunt {
     
     private Integer rut_id;
     private Integer pun_numero;
@@ -13,7 +15,7 @@ public class PuntPaquetInfo {
     private String fot_titol;
     private String fot_url;
 
-    public PuntPaquetInfo(Integer rut_id, Integer pun_numero, String pun_nom, String pun_descripcio, Long pun_hora, Double pun_latitud, Double pun_longitud, Integer pun_elevacio, String fot_titol, String fot_url) {
+    public InfoPunt(Integer rut_id, Integer pun_numero, String pun_nom, String pun_descripcio, Long pun_hora, Double pun_latitud, Double pun_longitud, Integer pun_elevacio, String fot_titol, String fot_url) {
         this.rut_id = rut_id;
         this.pun_numero = pun_numero;
         this.pun_nom = pun_nom;
@@ -26,83 +28,90 @@ public class PuntPaquetInfo {
         this.fot_url = fot_url;
     }
 
-    public Integer getRut_id() {
+    public Integer getId() {
         return rut_id;
     }
 
-    public void setRut_id(Integer rut_id) {
+    public void setId(Integer rut_id) {
         this.rut_id = rut_id;
     }
 
-    public Integer getPun_numero() {
+    public Integer getNumero() {
         return pun_numero;
     }
 
-    public void setPun_numero(Integer pun_numero) {
+    public void setNumero(Integer pun_numero) {
         this.pun_numero = pun_numero;
     }
 
-    public String getPun_nom() {
+    public String getNom() {
         return pun_nom;
     }
 
-    public void setPun_nom(String pun_nom) {
+    public void setNom(String pun_nom) {
         this.pun_nom = pun_nom;
     }
 
-    public String getPun_descripcio() {
+    public String getDescripcio() {
         return pun_descripcio;
     }
 
-    public void setPun_descripcio(String pun_descripcio) {
+    public void setDescripcio(String pun_descripcio) {
         this.pun_descripcio = pun_descripcio;
     }
 
-    public Long getPun_hora() {
+    public Long getHoraLong() {
         return pun_hora;
     }
-
-    public void setPun_hora(Long pun_hora) {
+    
+    public String getHoraString(){
+        return String.format("%02d:%02d:%02d", 
+        TimeUnit.MILLISECONDS.toHours(pun_hora),
+        TimeUnit.MILLISECONDS.toMinutes(pun_hora) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(pun_hora)),
+        TimeUnit.MILLISECONDS.toSeconds(pun_hora) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(pun_hora)));
+    }
+    
+    public void setHora(Long pun_hora) {
         this.pun_hora = pun_hora;
     }
 
-    public Double getPun_latitud() {
+    public Double getLatitud() {
         return pun_latitud;
     }
 
-    public void setPun_latitud(Double pun_latitud) {
+    public void setLatitud(Double pun_latitud) {
         this.pun_latitud = pun_latitud;
     }
 
-    public Double getPun_longitud() {
+    public Double getLongitud() {
         return pun_longitud;
     }
 
-    public void setPun_longitud(Double pun_longitud) {
+    public void setLongitud(Double pun_longitud) {
         this.pun_longitud = pun_longitud;
     }
 
-    public Integer getPun_elevacio() {
+    public Integer getElevacio() {
         return pun_elevacio;
     }
 
-    public void setPun_elevacio(Integer pun_elevacio) {
+    public void setEelevacio(Integer pun_elevacio) {
         this.pun_elevacio = pun_elevacio;
     }
 
-    public String getFot_titol() {
+    public String getFotTitol() {
         return fot_titol;
     }
 
-    public void setFot_titol(String fot_titol) {
+    public void setFotTitol(String fot_titol) {
         this.fot_titol = fot_titol;
     }
 
-    public String getFot_url() {
+    public String getFotUrl() {
         return fot_url;
     }
 
-    public void setFot_url(String fot_url) {
+    public void setFotUrl(String fot_url) {
         this.fot_url = fot_url;
     }
     

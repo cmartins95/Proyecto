@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RutApp_Rutes" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryNewPage="true" isSummaryWithPageHeaderAndFooter="true" uuid="f7e48260-6254-4eb3-9771-7241964085ed">
+	<property name="ireport.zoom" value="1.4641000000000035"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="categoria" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select
+   	c.cat_nom as CAT_NOM,
+	r.rut_id as RUT_ID,
+	r.rut_titol as RUT_TITOL,
+	r.rut_desc_markdown as RUT_DESCRIPCIO,
+	r.rut_desnivell as RUT_DESNIVELL,
+	r.rut_alcada_max as RUT_ALC_MAX,
+	r.rut_alcada_min as RUT_ALC_MIN,
+	r.rut_distancia_km as RUT_DISTANCIA,
+	r.rut_temps_aprox as RUT_TEMPS,
+	r.rut_circular as RUT_CIRCULAR,
+	r.rut_dificultat_5 as RUT_DIFICULTAT,
+	f.fot_url as RUT_FOTO,
+    p.pun_numero as PUN_NUMERO,
+    p.pun_nom as PUN_NOM,
+    p.pun_descripcio as PUN_DESCRIPCIO,
+    p.pun_elevacio as PUN_ELEVACIO,
+    p.pun_hora as PUN_HORA,
+    p.pun_latitud as PUN_LATITUD,
+    p.pun_longitud as PUN_LONGITUD,
+    f2.fot_url as PUN_FOTO
+from
+	ruta r join categoria c on r.rut_cat_id = c.cat_id
+		join foto f on r.rut_foto = f.fot_id
+        join punt p on p.pun_id = r.rut_id
+        join foto f2 on p.pun_foto = f2.fot_id
+where
+	c.cat_id = $P{categoria}
+order by RUT_ID, PUN_NUMERO;]]>
+	</queryString>
+	<field name="CAT_NOM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RUT_ID" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RUT_TITOL" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RUT_DESCRIPCIO" class="java.lang.String"/>
+	<field name="RUT_DESNIVELL" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RUT_ALC_MAX" class="java.lang.Integer"/>
+	<field name="RUT_ALC_MIN" class="java.lang.Integer"/>
+	<field name="RUT_DISTANCIA" class="java.lang.Float"/>
+	<field name="RUT_TEMPS" class="java.lang.String"/>
+	<field name="RUT_CIRCULAR" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="RUT_DIFICULTAT" class="java.lang.Integer"/>
+	<field name="RUT_FOTO" class="java.lang.String"/>
+	<field name="PUN_NUMERO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_NOM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_DESCRIPCIO" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_ELEVACIO" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_HORA" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_LATITUD" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_LONGITUD" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PUN_FOTO" class="java.lang.String"/>
+	<group name="GroupRutes">
+		<groupExpression><![CDATA[$F{RUT_FOTO}]]></groupExpression>
+		<groupHeader>
+			<band height="428">
+				<image>
+					<reportElement uuid="96599c84-6b65-44c0-a60c-c36d4b238271" x="367" y="0" width="187" height="149"/>
+					<imageExpression><![CDATA[new URL($F{RUT_FOTO})]]></imageExpression>
+				</image>
+				<textField>
+					<reportElement uuid="c7a3487c-dfe8-4223-93b4-bf37350cc0d7" x="1" y="0" width="355" height="28"/>
+					<textElement verticalAlignment="Middle">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{RUT_TITOL}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="6ee8e0cb-bbd5-44df-a1f9-068240e79236" x="245" y="36" width="111" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{RUT_DESNIVELL}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="3a510c2c-196b-4a07-ad38-d73ccf547026" x="61" y="36" width="107" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{RUT_DISTANCIA}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="05c03145-8b7e-4c13-9d02-045cce0c081c" x="184" y="36" width="61" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Desnivell:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="b71927f7-6ce0-4746-8a85-c181caf627e3" x="2" y="36" width="59" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Distancia:]]></text>
+				</staticText>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="5359a7ba-ee15-4efa-9590-c08436a57e68" x="259" y="64" width="97" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{RUT_ALC_MAX}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="e58f6e9d-3905-4c3f-9fde-a557939479a7" x="254" y="92" width="102" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{RUT_ALC_MIN}]]></textFieldExpression>
+				</textField>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement uuid="803e1959-2565-47c3-86c2-b5d47c259779" x="88" y="64" width="22" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[new String(String.format("%02d",
+        java.util.concurrent.TimeUnit.MILLISECONDS.toHours(Long.parseLong($F{RUT_TEMPS}).longValue())))]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="77f10898-8c61-4668-8c66-5ecc591716e1" x="56" y="92" width="112" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{RUT_CIRCULAR}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="d771ac39-2dfd-45c1-8687-91ebbf23dddc" x="59" y="120" width="109" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$F{RUT_DIFICULTAT}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="true">
+					<reportElement uuid="e1eb715b-61e9-40ae-bcec-dfd7dd048904" x="0" y="157" width="554" height="241"/>
+					<textElement markup="styled"/>
+					<textFieldExpression><![CDATA[$F{RUT_DESCRIPCIO}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement uuid="1271515a-9314-4e20-aa7c-bd43ffdadd6c" x="184" y="64" width="75" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Alçada Max:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8857b334-c19a-4f73-b6c2-2919aceff993" x="184" y="92" width="70" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Alçada Min:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="85dc4ba7-e75c-4eb2-a1db-9676febb66c6" x="2" y="64" width="86" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Temps aprox:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="d15bf0fa-2b7e-456d-990b-325e407039ed" x="2" y="92" width="54" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Circular:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="55aa4c64-945b-46f0-9a12-a0bfbf7cbc4e" x="2" y="120" width="57" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Dificultat:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="fca7788a-119e-452f-8742-7ec2d976b3e6" x="0" y="408" width="28" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Nº]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="52db4341-ac7d-40f8-b503-d6d0be93692a" x="28" y="408" width="156" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Nom]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8b550eb1-e31b-4fd9-8b2f-b9fff621027d" x="184" y="408" width="92" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Elevació]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="8675acaa-8a67-4210-8f8c-d78f250605e0" x="276" y="408" width="92" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Latitud]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="ae15383c-a858-4576-864b-b1a432cf98fd" x="368" y="408" width="92" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Temps]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="38ea09ce-6f13-4bce-96b8-eb0c2b2e303d" x="460" y="408" width="92" height="20"/>
+					<textElement verticalAlignment="Middle">
+						<font size="8" isBold="true" isItalic="false"/>
+					</textElement>
+					<text><![CDATA[Longitud]]></text>
+				</staticText>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement uuid="268b0ed3-33ac-44c4-869c-263dd6dd6922" x="110" y="64" width="24" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[new String(String.format("%02d",
+        java.util.concurrent.TimeUnit.MILLISECONDS.toMinutes(Long.parseLong($F{RUT_TEMPS}).longValue()) - java.util.concurrent.TimeUnit.HOURS.toMinutes(java.util.concurrent.TimeUnit.MILLISECONDS.toHours(Long.parseLong($F{RUT_TEMPS}).longValue()))))]]></textFieldExpression>
+				</textField>
+				<textField pattern="" isBlankWhenNull="true">
+					<reportElement uuid="24f13d92-a5f4-4a41-a75f-679fd95baea1" x="134" y="64" width="24" height="20"/>
+					<textElement verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[new String(String.format("%02d",
+        java.util.concurrent.TimeUnit.MILLISECONDS.toSeconds(Long.parseLong($F{RUT_TEMPS}).longValue()) - java.util.concurrent.TimeUnit.MINUTES.toSeconds(java.util.concurrent.TimeUnit.MILLISECONDS.toMinutes(Long.parseLong($F{RUT_TEMPS}).longValue()))))]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="16"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="18"/>
+	</title>
+	<pageHeader>
+		<band height="50">
+			<textField>
+				<reportElement uuid="ddb9f0d2-000a-4711-baf3-ddcd03c82e2a" x="0" y="0" width="554" height="50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="20" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CAT_NOM}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement uuid="7341a201-01b7-4886-a503-2a4461da3275" x="0" y="0" width="28" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PUN_NUMERO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8a3fb959-68fe-44b9-b5ee-82714208e64a" x="28" y="0" width="156" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PUN_NOM}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="9fe776b7-d41a-4ce3-8622-535466f174f4" x="184" y="0" width="92" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PUN_ELEVACIO}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="57d5d5c6-22c3-4df4-ad73-428a1fc8f1de" x="276" y="0" width="92" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PUN_LATITUD}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="7e11a6bf-d3b6-4459-ad27-ca555d0fd0b1" x="368" y="0" width="92" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PUN_HORA}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement uuid="fdb2d961-7c5c-4394-b07a-c10bc871610b" x="460" y="0" width="92" height="20"/>
+				<textElement verticalAlignment="Middle">
+					<font isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PUN_LONGITUD}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="18"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch">
+			<textField pattern="dd/MM/yyyy">
+				<reportElement uuid="966138fb-fe8a-4e74-9789-f7ce4facea08" x="0" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement uuid="cdc3a0e6-6cc5-4b40-b383-88a3b2be63df" x="516" y="0" width="40" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3e81b539-e90f-4f12-bd9c-ecc8f8890eb0" x="436" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
